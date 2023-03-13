@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maia Gutierrez">
+    <meta name="description" content="Ground and surround yourself in clay. That's what I always say.
+    Whether you would like to purchase a unique handmade pottery, or you would like to play with the clay yourself, check out my website for pottery lessons and shop for your aesthetic online!">
+    <meta name="keywords" content="earth, hands, pottery, lessons, shop, gifts, unique gifts, learn, new skill, home decor, clay, vases, pots, potted plants, pottery lessons, pottery wheel lessons, arts, art, aesthetic, date night, group lessons, glaze, kiln, table decor, table settings, ceramics">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Ms+Madi&family=Poiret+One&family=Yantramanav&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="AdobeStock_pottery_favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="AdobeStock_pottery_favicon_16x16.png">
+    <!--Links-->
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <title> Earth Hands - Ceramics</title>
+</head>
+<body onload="myFunction()">
+    <a id="skip" href="#main-content"> Skip to Main Content</a>
+    <header>
+        <h1 id="top">Earth Hands</h1>
+        <p>Ceramics</p>
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul id="menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#lessons">Lessons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button onclick="darkMode()"></button>
+    </header>
+    <main id="main-content">
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello and Welcome! <br>My name is Anastasia and I am a potter located in Orange County, California. It's true, I still love playing with mud... some things never change. But now, I turn the mud into the most beautiful vessles. Whether you would like to purchase a unique handmade pottery item, or you would like to play with the clay yourself, you've come to the right place!</p>
+        </section>
+
+        <!-- Shop -->
+        <section id="shop">
+            <h2>Shop</h2>
+            <p>Ceramics make the perfect gift! Treat yourself or a loved one with an item from my shop.</p>
+            <div id="items">
+                <button class="item" id="vaseButton">Vases</button>
+                <button class="item" id="tableButton">Tableware</button>
+                <button class="item" id="plantButton">Planters</button>
+            </div>
+            <div id="display">
+                <section class="shopItems" id="vases">
+                    <img src="vases.jpg" alt="Four clay vases on a white table, sat in the sun, with a woman's hands shown placing one of the vases on the table.">
+                        <h3>Vases</h3>
+                        <p>First come vases, <span id="emphasize">then</span> come flowers. Because you don't want your flowers just sitting on the counter, right? <br><br> P.s. Flowers aren't the only things vases hold, in case, you know... Flowers freak you out.</p>
+                        <a href="#shop">Shop Vases</a>
+                </section>
+                <section class="shopItems" id="tableware">
+                    <img src="shop.jpg" alt="Beautiful clay plates line a wall and other ceramic items display on a table below.">
+                    <h3>Tableware</h3>
+                    <p>Trust me, how one decorates their table says a lot about a person! Whether you're looking for plates, bowls, mugs, pitchers... Here is anything you need to make a statement at the table. I make tableware for any aesthetic.</p>
+                    <a href="#shop">Shop Tableware</a>
+                </section>
+                <section class="shopItems" id="planters">
+                    <img src="plants.jpg" alt="Two potted plants on a small table."> 
+                    <h3>Planters</h3>
+                    <p>What's short for pottery? Pot! What belongs in a pot? Plants! My hand crafted planters come in all shapes and sizes, because so does your greenery.</p>
+                    <a href="#shop">Shop Planters</a>
+                </section>
+            </div>
+        </section>
+
+        <!-- Play to Win -->
+        <section id="game">
+            <h2>Play to Win</h2>
+            <p>Guess the matching number to win a discount code for an item in the shop.</p>
+            <p id="prompt">Enter a number between 1 and 10: </p>
+            <input type="number" id="input">
+            <button id="playGame">Guess!</button>
+            <div id="outcome">
+                <p>Your Guess: <span id="player"></span></p>
+                <p>Winning Number: <span id="random"></span></p>
+            </div>
+            <p id="gameMsg"></p>
+        </section>
+
+        <!-- Lessons -->
+        <section id="lessons">
+            <h2>Lessons</h2>
+            <p>I offer group and one-on-one lessons for handbuilt and wheel techniques at my studio!</p>
+            <img id="group-lessons" src="family_lessons.jpg" alt="A grandma and grandpa sitting on either side of their young granddaughter at a pottery studio, smiling and holding up their clay-covered hands.">
+            <img id="one-on-one-lessons" src="one_on_one.jpg" alt="One woman observes another as they both form clahy on a wheel.">
+
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Please fill out this form if you would like more information about lessons, have questions about items in the shop, or to commission a work.</p>
+            
+            <form id="myForm">
+                <div id="form-group1">
+                    <label for="fullName">Name<span class="required">*</span></label>
+                    <input type="text" name="name" id="fullName" autocomplete="given-name" placeholder="First and Last Name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email"> 
+
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                <div id="form-group2">
+                    <fieldset>
+                        <legend >Preferred Contact Method<span class="required">*</span></legend>
+                        <input name="chooseMethod" type="radio" value="phone" id="choosePhone"><label for="choosePhone" class="radio">Phone</label>
+                        <input name="chooseMethod" type="radio" value="email" id="chooseEmail"><label for="chooseEmail">Email</label>
+                    </fieldset>
+
+                    <label for="myMessage">Message<span class="required">*</span></label>
+                    <textarea id="myMessage"></textarea>
+                    <div id="success"></div>
+                </div>
+                <div id="formErrors"></div>
+                <input type="submit" name="mySubmit" id="mySubmit" value="Submit">
+            </form>  
+            <section id="successfulContent" class="hide">
+                <h3>What You Submitted:</h3>
+                <p id="formOutput"></p>
+            </section>
+            <a href="#top">Back To Top</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 Maia Gutierrez <br> All rights reserved.</p>
+        
+    </footer>
+</body>
+</html>
